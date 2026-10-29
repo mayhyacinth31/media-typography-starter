@@ -27,12 +27,19 @@
     --space-4: 1rem;
     --space-6: 1.5rem;
     --space-8: 2rem;
+    /* added */
+    --body-text: Arial;
+    --header-text: "Monaco", monospace;
+    --line-height: 1.2rem;
+    --measure: 5rem;
+    --medium-space: 4rem;
+    --lrg-space: 10rem;
   }
 
   body {
     color: var(--color-text);
     background: var(--color-surface);
-    font-family: var(--font-body);
+    font-family: var(--body-text);
     font-size: var(--step-0);
     line-height: 1.5;
   }
@@ -42,12 +49,14 @@
   video {
     max-inline-size: 100%;
     block-size: auto;
+    aspect-ratio: 3  / 2;
   }
 
   h1,
   h2,
   h3 {
     line-height: 1.1;
+    font-family: var(--header-text);
   }
 }
 
@@ -134,6 +143,11 @@
     border: 1px solid #d0d0d0;
     border-radius: .5rem;
     background: var(--color-surface);
+    
+  }
+
+  .card-grid{
+    width: clamp(50vw, 60vw, 70rem);
   }
 }
 

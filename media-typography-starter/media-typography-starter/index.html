@@ -25,17 +25,19 @@
         <h1>Practice responsive media decisions with readable type.</h1>
         <p>Replace the placeholder media paths with your own image variants, then document the format, size, source, and accessibility purpose.</p>
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="100%" height="100%">
-          <polygon points="207.109375,66.21875 111.109375,163.21875 198.109375,272.21875 284.109375,163.21875 205.109375,67.21875" fill="#4fc3f7" stroke-width="6" stroke="#4fc3f7"></polygon></svg>
-      </div>
+          <polygon points="207.109375,66.21875 111.109375,163.21875 198.109375,272.21875 284.109375,163.21875 205.109375,67.21875" fill="#4fc3f7" stroke-width="6" stroke="#4fc3f7" alt=""></polygon></svg>
+          <img class="svg-ex" src="assets/sample-icon.svg" alt="" width="120" height="120">
+          <p>Simple diamond-shaped SVG shown above with the given SVG that is placed using a different method.</p>
+        </div>
       <figure class="hero-media">
         <img 
-          srcset="assets/img-580.png 580, assets/img-800.png 800w" 
-          sizes="(width <=620) 580px, 800px" 
-          src="assets/img-800.png" 
-          alt="Tuxedo cat"/>
+          srcset="assets/img-580.png 580w, assets/img-800.png 800w, assets/img-1200.png 1200w" 
+          sizes="(max-width: 220) 580px, (max-width: 600px) 800px, (max-width: 1000px) 1200px" 
+          src="assets/img-1200.png" 
+          alt="Tuxedo cat" max-width/>
 
         <!-- <div class="placeholder-image" role="img" aria-label="Placeholder for a responsive garden workshop image"></div> -->
-        <figcaption>Smaller image set at approximately 580 pixels wide, larger set at 800. Changes at anything at or above 620px width. Credit: <a href ="https://unsplash.com/photos/black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk">Unsplash</a></figcaption>
+        <figcaption>Smaller image set at approximately 580 pixels wide, larger set at 800. Changes at anything at or above 620px width. Credit: <a href ="https://unsplash.com/photos/black-and-white-cat-lying-on-brown-bamboo-chair-inside-room-gKXKBY-C-Dk">Unsplash</a>. License: Unsplash License (free to use).</figcaption>
       </figure>
     </section>
 
